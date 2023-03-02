@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    min-height: 100vh;
+}
+header{
+    padding: 0 2.5rem
+}
+#stickyNav{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: 40px
+}
+
+#stickyNav>img{
+    height: 5rem;
+}
+main{
+    display: grid;
+    grid-template-columns: 10;
+    column-gap: 2.5rem;
+    min-height: 90vh;
+}
+
+h1{
+    font-family: sans-serif;
+    grid-row-start: 1;
+    grid-column: 1/2;
+    font-size: 6rem;
+    font-weight: normal;
+    align-self: center;
+    padding-left: 2.5rem;
+    z-index: 10;
+}
