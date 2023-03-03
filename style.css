@@ -1,12 +1,15 @@
+@font-face {
+    font-family: 'Favorit';
+    src: URL('font/Favorit-Regular.ttf') format('truetype');
+  }
+
 *{
     box-sizing: border-box;
     margin: 0;
 }
-body{
-    min-height: 100vh;
-}
 header{
-    padding: 0 2.5rem
+    padding: 0 2.5rem;
+    height: 0;
 }
 #stickyNav{
     display: flex;
@@ -23,15 +26,34 @@ main{
     grid-template-columns: 10;
     column-gap: 2.5rem;
     min-height: 90vh;
+    justify-content: center;
+    align-content: center;
 }
 
 h1{
-    font-family: sans-serif;
-    grid-row-start: 1;
-    grid-column: 1/2;
+    font-family: 'Favorit', sans-serif;
     font-size: 6rem;
     font-weight: normal;
     align-self: center;
-    padding-left: 2.5rem;
+    justify-self: center;
     z-index: 10;
+    grid-row-start: 1;
+    grid-column: 4/6;
+    text-align: center;
+    color: white;
+}
+video{
+    grid-row-start: 1;
+    grid-column: 1/10;
+    height: 100vh;
+    width: 100vw;
+    padding-top: 0;
+    object-fit: cover;
+}
+
+video::-webkit-media-controls-timeline {
+    display: none;
+}
+video::-webkit-media-controls {
+    display: none;
 }
